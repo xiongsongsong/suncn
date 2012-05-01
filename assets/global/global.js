@@ -6,4 +6,16 @@
  * To change this template use File | Settings | File Templates.
  */
 
-alert(123)
+
+$('#main-menu').bind('swipeleft', function (ev) {
+    $('#info').html('left');
+});
+
+$('#main-menu').bind('swiperight', function (ev) {
+    $('#info').html('right');
+});
+
+
+setTimeout(function () {
+    window.location.reload(true)
+}, 5000);

@@ -2,6 +2,12 @@
 head
     meat(charset="utf-8")
     link(rel='stylesheet',href='global/global.css')
+    link(rel='stylesheet',href='jquery.mobile-1.1.0.min.css')
+    script(src='jquery-1.6.4.min.js')
+    script(src='jquery-mobile.js')
     script(src='global/global.js')
 body
     !{body}
+    p#info
+    #main-menu|主菜单
+        a(href="/?id=123"+rand) | Reload
