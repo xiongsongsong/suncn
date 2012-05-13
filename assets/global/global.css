@@ -12,14 +12,14 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构�
 dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
 pre, /* text formatting elements 文本格式元素 */
 form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
-th, td /* table elements 表格元素 */   {
+th, td /* table elements 表格元素 */        {
     margin: 0;
     padding: 0;
 }
 
 /** 设置默认字体 **/
 body,
-button, input, select, textarea /* for ie */   {
+button, input, select, textarea /* for ie */        {
     font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
 }
 
@@ -98,27 +98,64 @@ summary, time, mark, audio, video {
     padding: 0;
 }
 
-mark {
-    background: #ff0;
-}
-
 html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
     position: relative;
 }
 
-#main-menu{
+body {
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
+    position: relative;
+    font-family: "Microsoft Yahei";
+    background: url(http://ww3.sinaimg.cn/large/4b1ee330jw1dgaw7cy76vj.jpg)!important;
+    overflow: hidden!important;
+}
+
+#main-menu {
     position: fixed;
-    left:0;
-    bottom:0;
+    left: 0;
+    bottom: 0;
     height: 35px;
-    background: #f60 ;
-    width:100%;
+    background: #f40;
+    width: 640px;
     text-align: center;
     line-height: 35px;
-    color:#fff;
+    color: #fff;
 }
+
+#navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 640px;
+    height: 50px;
+    background: #f60;
+}
+
+#navigation h1 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+#navigation b {
+    font-size: 20px;
+    line-height: 20px;
+    top: 12px;
+}
+
+#navigation b.left {
+    position: absolute;
+    left: 12px;
+}
+
+#navigation b.right {
+    position: absolute;
+    right: 12px;
+}
+
+body .ui-body-c,body .ui-overlay-c{background: transparent!important;}

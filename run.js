@@ -9,9 +9,16 @@
 var express = require('express'),
     app = express.createServer();
 app.set('view engine', 'jade');
+var path = require('path');
 
-app.get('*', function (req, res) {
-        res.render('home', {rand:Math.random()});
+app.get('/assets/*', function (req, res) {
+    var filePath = path.normalize(__dirname + req.url);
+    res.sendfile(filePath);
 });
 
-app.listen(8000);
+app.get('*', function (req, res) {
+    res.render('home', {rand:Math.random()});
+});
+
+
+app.listen(80);

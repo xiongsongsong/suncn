@@ -1,6 +1,7 @@
 !!!5
 head
-    meat(charset="utf-8")
+    meta(name="viewport",content="width=device-width,initial-scale=1.0,maximun-scale=1.0,user-scalable=no;")
+    meta(charset="utf-8")
     link(rel='stylesheet',href='global/global.css')
     link(rel='stylesheet',href='jquery.mobile-1.1.0.min.css')
     script(src='jquery-1.6.4.min.js')
@@ -9,5 +10,9 @@ head
 body
     !{body}
     p#info
+    #navigation
+        h1|SUNCN
+        b.left|返回上一步
+        b.right|刷新
     #main-menu|主菜单
-        a(href="/?id=123"+rand) | Reload
+        a(href="/?id=123"+rand,target="_self") | Reload
